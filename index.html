@@ -1,10 +1,15 @@
+---
+layout: default
+title: My Portfolio
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
@@ -23,19 +28,19 @@
         <h2 class="section-title">My Projects</h2>
         <div class="project-grid">
             <div class="project animate__animated animate__fadeIn">
-                <img src="images/project1.jpg" alt="Project 1">
+                <img src="/assets/images/project1.jpg" alt="Project 1">
                 <h3>Registration Bot</h3>
                 <p>An automated bot to check class availability and notify users via SMTP.</p>
                 <a href="https://github.com/yourusername/project1" target="_blank">View Project</a>
             </div>
             <div class="project animate__animated animate__fadeIn">
-                <img src="images/project2.jpg" alt="Project 2">
+                <img src="/assets/images/project2.jpg" alt="Project 2">
                 <h3>SunHacks MLH</h3>
                 <p>An image-to-text conversion tool using Flutter and Tesseract OCR.</p>
                 <a href="https://github.com/yourusername/project2" target="_blank">View Project</a>
             </div>
             <div class="project animate__animated animate__fadeIn">
-                <img src="images/project3.jpg" alt="Project 3">
+                <img src="/assets/images/project3.jpg" alt="Project 3">
                 <h3>Revolution UC</h3>
                 <p>A self-learning AI chatbot for personal therapy and journaling.</p>
                 <a href="https://github.com/yourusername/project3" target="_blank">View Project</a>
@@ -66,6 +71,6 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="/assets/js/script.js"></script>
 </body>
 </html>
