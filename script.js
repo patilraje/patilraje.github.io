@@ -1,9 +1,11 @@
-// script.js
+// Initialize Particles.js
+particlesJS.load('particles-js', 'particles.json', () => {
+    console.log('Particles.js loaded');
+});
 
-// DOMContentLoaded ensures the script runs after the page is fully loaded
+// Scroll-triggered animations
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Scroll-triggered animations
-    const sections = document.querySelectorAll("section");
+    const sections = document.querySelectorAll(".section");
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -11,20 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 entry.target.classList.add("visible");
             }
         });
-    }, { threshold: 0.2 }); // Trigger when 20% of the section is visible
+    }, { threshold: 0.2 });
 
     sections.forEach((section) => observer.observe(section));
-
-    // 2. Dark Mode Toggle
-    const toggleButton = document.getElementById("dark-mode-toggle");
-    const body = document.body;
-
-    toggleButton.addEventListener("click", () => {
-        body.classList.toggle("dark-mode");
-    });
-
-    // 3. Particles.js Configuration
-    particlesJS.load('particles-js', 'particles.json', function() {
-        console.log('Particles.js config loaded');
-    });
 });
