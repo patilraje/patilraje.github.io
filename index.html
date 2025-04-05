@@ -5,129 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>Welcome to My Portfolio!</h1>
-        <p>I'm passionate about coding, design, and creating awesome projects.</p>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1 class="animate__animated animate__fadeInDown">Hi, I'm Rutuja Patil</h1>
+        <p class="animate__animated animate__fadeInUp">I’m a developer passionate about creating cool projects.</p>
     </header>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Rutuja Patil, a developer/designer/student who loves building cool things. I enjoy working on web development, machine learning, and creative projects.</p>
-        <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
-    </section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <div class="resume-item">
-            <h3>Bachelor of Science in Engineering (CSE)</h3>
-            <p><strong>Arizona State University</strong> | December 2026 | GPA: 4.0</p>
-        </div>
-    </section>
-
-    <!-- Technical Skills Section -->
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><strong>Languages:</strong> Python, Java, C/C++, HTML, JavaScript, TypeScript, Scheme, Prolog, MIPS assembly, Verilog</li>
-            <li><strong>Frameworks/Libraries:</strong> MediaPipe, Numpy, CV2, Angular.js, Next.js, Tailwind CSS</li>
-            <li><strong>Tools/Environments:</strong> Git, Jira, Android Studio, Eclipse, Jupyter Notebook, Docker, Colab, Visual Studio, Vercel, Figma</li>
-            <li><strong>Authentication/Provisioning:</strong> Okta, SAML, SCIM</li>
-            <li><strong>OS/Platforms:</strong> Linux, Ubuntu, Raspberry Pi, Arduino</li>
-            <li><strong>Databases:</strong> MySQL, MongoDB</li>
-            <li><strong>Certifications:</strong> AWS Cloud Technical Essentials, Intro to TensorFlow for AI, ML, and Deep Learning</li>
-        </ul>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="resume-item">
-            <h3>ASU FURI Research Student</h3>
-            <p><strong>January 2024 – Present | Tempe, AZ</strong></p>
-            <ul>
-                <li>Developing algorithms to optimize video question answering systems for real-time traffic monitoring, improving congestion management, incident detection, and road safety.</li>
-                <li>Reviewing and implementing techniques from research papers to enhance understanding of neural networks and their integration into video data analysis.</li>
-            </ul>
-        </div>
-        <div class="resume-item">
-            <h3>Full Stack Intern at Catenactio</h3>
-            <p><strong>June 2024 – Present | Remote</strong></p>
-            <ul>
-                <li>Designed and developed a modern, responsive user interface using Tailwind CSS, Next.js 14, and Figma, ensuring an intuitive and user-friendly experience.</li>
-                <li>Implemented secure SAML authentication with Okta and set up SCIM provisioning for automated user management and access control, utilizing TypeScript for improved code quality and maintainability.</li>
-            </ul>
-        </div>
-        <div class="resume-item">
-            <h3>Automation Intern at Catenactio</h3>
-            <p><strong>March 2024 – June 2024 | Los Angeles, CA</strong></p>
-            <ul>
-                <li>Implemented and configured a Wazuh SIEM system on an Ubuntu server, integrating multiple custom log decoder plugins using the Wazuh API to enhance log parsing and security monitoring.</li>
-                <li>Developed a bot for automating log analysis and testing regular expressions, ensuring accurate and efficient log parsing for improved incident response within the Wazuh system.</li>
-            </ul>
-        </div>
-        <div class="resume-item">
-            <h3>Software Engineer Intern at Adagrad</h3>
-            <p><strong>December 2022 – January 2023 | Pune, MH, IND</strong></p>
-            <ul>
-                <li>Utilized Python for data analysis, extracting number plates from traffic camera images within Adagrad's integrated automated traffic regulation system.</li>
-                <li>Spearheaded algorithm refinement using Python, enhancing accuracy and real-time processing of number plate extraction for Adagrad's traffic monitoring solution.</li>
-            </ul>
-        </div>
-    </section>
-
     <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Registration Bot</h3>
-            <p><strong>Python, HTML, Beautifulsoup | December 2023</strong></p>
-            <ul>
-                <li>Engineered an automated class availability checker that runs at regular intervals, notifying me via SMTP in real-time when seats become available for a specific course.</li>
-                <li>Demonstrated problem-solving skills by creating a practical solution to monitor and alert users about changes in a dynamic online environment, showcasing the ability to automate repetitive tasks.</li>
-            </ul>
+    <section id="projects" class="section">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-grid">
+            <div class="project animate__animated animate__fadeIn">
+                <img src="images/project1.jpg" alt="Project 1">
+                <h3>Registration Bot</h3>
+                <p>An automated bot to check class availability and notify users via SMTP.</p>
+                <a href="https://github.com/yourusername/project1" target="_blank">View Project</a>
+            </div>
+            <div class="project animate__animated animate__fadeIn">
+                <img src="images/project2.jpg" alt="Project 2">
+                <h3>SunHacks MLH</h3>
+                <p>An image-to-text conversion tool using Flutter and Tesseract OCR.</p>
+                <a href="https://github.com/yourusername/project2" target="_blank">View Project</a>
+            </div>
+            <div class="project animate__animated animate__fadeIn">
+                <img src="images/project3.jpg" alt="Project 3">
+                <h3>Revolution UC</h3>
+                <p>A self-learning AI chatbot for personal therapy and journaling.</p>
+                <a href="https://github.com/yourusername/project3" target="_blank">View Project</a>
+            </div>
         </div>
-        <div class="project">
-            <h3>SunHacks, MLH</h3>
-            <p><strong>Python, Docker, Flutter | November 2023</strong></p>
-            <ul>
-                <li>Developed an image-to-text conversion model called 'Noted.' using Flutter and Tesseract OCR to extract notes from pictures.</li>
-                <li>Trained an NLP model to predict the subject and automated the segregation of images into class-specific albums.</li>
-            </ul>
-        </div>
-        <div class="project">
-            <h3>Revolution UC, MLH</h3>
-            <p><strong>Java, Flutter, Jupyter Notebooks | February 2023</strong></p>
-            <ul>
-                <li>Developed a self-learning AI chatbot called 'BH.AI' that talks with users as a personal therapist and a self-journaling platform.</li>
-                <li>Collaborated with a team of 4 and integrated extensive conversational datasets into the NLP machine learning model.</li>
-            </ul>
-        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <p>I’m a Computer Science student at Arizona State University, specializing in web development, machine learning, and creative problem-solving. I love building projects that make a difference!</p>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="4" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact Me</h2>
+        <p>Feel free to reach out to me:</p>
+        <ul class="contact-list">
+            <li><a href="mailto:rpatil46@asu.edu"><i class="fa-solid fa-envelope"></i> Email</a></li>
+            <li><a href="https://linkedin.com/in/rutuja-patil-bb5996254" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/patilraje" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
+        </ul>
     </section>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2023 Rutuja Patil. All rights reserved.</p>
-        <p>
-            Connect with me:
-            <a href="https://linkedin.com/in/rutuja-patil-bb5996254/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a> |
-            <a href="https://github.com/patilraje" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-        </p>
     </footer>
 
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
