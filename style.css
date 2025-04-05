@@ -1,8 +1,60 @@
-/* Resume Styles */
-#education, #skills, #experience, #projects {
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333; /* Dark text */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient blue-purple */
+    color: white;
+    border-bottom: 5px solid #ff6f61; /* Coral accent */
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    color: #2575fc; /* Blue headings */
+}
+
+p {
+    margin-bottom: 10px;
+    color: #555; /* Slightly muted text */
+}
+
+img.profile-pic {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    border: 4px solid #ff6f61; /* Coral border */
+}
+
+section {
     padding: 40px 20px;
     max-width: 800px;
     margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+    background-color: #ffffff; /* White background for sections */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .resume-item, .project {
@@ -11,6 +63,7 @@
 
 .resume-item h3 {
     margin-bottom: 5px;
+    color: #6a11cb; /* Purple heading */
 }
 
 .resume-item p {
@@ -20,6 +73,7 @@
 
 .project h3 {
     margin-bottom: 5px;
+    color: #6a11cb; /* Purple heading */
 }
 
 .project p {
@@ -30,4 +84,38 @@
 ul {
     list-style-type: disc;
     margin-left: 20px;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb); /* Reversed gradient */
+}
+
+a {
+    color: #2575fc; /* Blue links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff6f61; /* Coral hover effect */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient footer */
+    color: white;
+    margin-top: 40px;
+    border-top: 5px solid #ff6f61; /* Coral accent */
 }
